@@ -6,6 +6,13 @@
 /out-tsc
 /bazel-out
 
+# Angular development server
+/.angular/
+# IDE files
+*.iml
+.idea/
+*.vscode/
+
 # Node
 /node_modules
 npm-debug.log
