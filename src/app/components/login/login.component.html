@@ -1,0 +1,16 @@
+<!-- login.component.html -->
+<body>
+<div class="login-container">
+    <mat-card class="login-card">
+        <div class="logo-container">
+            <img class="logo" src="https://hanza.com/wp-content/uploads/2022/03/hanza-logo-purple-retina.png" alt="Company Logo">
+          </div>
+          <form (submit)="login()">
+            <div class="form-group">
+              <input type="text" id="email" placeholder="Microsoft account email" [(ngModel)]="email" name="email" >
+            </div>
+            <button type="submit">Authenticate user</button>
+          </form>
+    </mat-card>
+  </div>
+  </body>

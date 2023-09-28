@@ -1,0 +1,130 @@
+body {
+    background-image: url('../../images/background.png'); /* Replace with your image path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* dashboard-list.component.css */
+.dashboard-container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 40px;
+    text-align: left;
+    margin: 0;
+    color: #382051;
+    padding: 80px 0px 0px 50px;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between; /* Align items on the left and right sides */
+    align-items: center; /* Center vertically */
+    padding: 20px 50px; /* Adjust padding as needed */
+  }
+  
+  .header-left {
+    flex-grow: 1; /* Allow the left side to grow and take up available space */
+  }
+  
+  .header-right {
+    margin-left: auto; /* Push the right side to the rightmost position */
+    width: 250px;
+  }
+  
+  .dashboard-box-2 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    padding-top: 85px;
+    border-radius: 5px;
+    width: 700px;
+    text-align: center;
+  }
+
+  .dashboard-box-1 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    padding-top: 85px;
+    border-radius: 5px;
+    width: 350px;
+    text-align: center;
+  }
+  
+  .dashboard-gap-1 {
+    width: 10%; /* Adjust the gap width as needed */
+    display: inline-block;
+  }
+
+  .dashboard-gap-2 {
+    width: 10%; /* Adjust the gap width as needed */
+    display: inline-block;
+  }
+  
+  .dashboard-button {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+    margin: 30px auto;
+    padding: 15px 20px;
+    background-color: #382051;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .main-button-style{
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 20px;
+    margin-top: 80px;
+    background-color: #382051;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .main-button-style:hover {
+    background-color: #4f425c;
+    transition: 0.5s;
+  }
+
+  .main-button{
+    display: flex;
+  }
+
+  .box-header {
+    padding: 10px;
+    background-color: #f0f0f000; /* Header background color */
+    border-radius: 5px 0 0 5px; /* Rounded corners for the left side of the header */
+  }
+
+  .text{
+    color: #382051;
+  }
+  
+  .box-header h2 {
+    margin: 0;
+  }
+  
+  
+  .dashboard-button:hover {
+    background-color: #4f425c;
+    transition: 0.5s;
+  }
+
+  .dashboard-column {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%; /* Adjust the width of each column as needed */
+  }

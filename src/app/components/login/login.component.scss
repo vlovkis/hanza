@@ -1,0 +1,83 @@
+                /* Center the content vertically and horizontally */
+        body {
+            height: 100%;
+            background-image: url('../../images/background.png'); /* Replace with your image path */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;/* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+          }
+
+          .form-container {
+            padding: 20px;
+          }
+
+          .form-group {
+            margin-bottom: 20px;
+          }
+
+          label {
+            display: block;
+            font-weight: bold;
+          }
+
+          input[type="text"],
+          input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            border: 1px solid #cccccc00;
+            background-color: #cccccc00;
+            outline: 0;
+            border-width: 0 0 2px;
+            border-color: #382051;
+        }
+
+
+        mat-card{
+            background-color: transparent;
+            height: 100%;
+        }
+
+        .mat-mdc-card{
+            box-shadow: none;
+        }
+
+        /* Style for the company logo */
+        .logo {
+            padding-top: 120px;
+            padding-bottom: 100px;
+            width: 750px;
+            height: 130px;
+        }
+
+        /* Style for the login button */
+        button {
+            display: block;
+            margin: 0 auto;
+            background-color: #382051;
+            color: #fff;
+            border: none;
+            font-size: 15px;
+            padding: 15px 80px;
+            border-radius: 25px;
+            cursor: pointer;
+          }
+
+        /* Style for the login button on hover */
+        button:hover {
+            background-color: #4f425c;
+            transition: 0.5s;
+          }
+
+        mat-list-item{
+            height: 75px;
+        }
