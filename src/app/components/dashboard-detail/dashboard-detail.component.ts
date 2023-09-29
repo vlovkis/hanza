@@ -11,60 +11,16 @@ import { IReportEmbedConfiguration, models, service, Embed } from 'powerbi-clien
 })
 
 export class DashboardDetailComponent {
-  // phasedEmbeddingFlag = false;
-  // reportConfig: IReportEmbedConfiguration = {
-  //   type: 'report',
-  //   embedUrl: 'https://localhost:44300/',
-  //   tokenType: models.TokenType.Embed,
-  //   accessToken: '',
-  //   settings: undefined,
-  // };
+  isFullScreen = false;
 
-  // reportconfig: IReportEmbedConfiguration = {
-  //   type: "report",
-  //   id: undefined,
-  //   embedUrl: undefined,
-  //   accessToken: undefined,
-  //   tokenType: models.TokenType.Embed,
-  //   hostname: "https://localhost:44300/EmbedInfo/Embed"
-  // }
-  // @ViewChild(PowerBIReportEmbedComponent)
-  // reportObj!: PowerBIReportEmbedComponent;
-  // eventHandlersMap = new Map([
-  //   [
-  //     'loaded',
-  //     () => {
-  //       const report = this.reportObj.getReport();
-  //       report.setComponentTitle('Embedded report');
-  //     },
-  //   ],
-  //   ['rendered', () => console.log('Report has rendered')],
-  //   [
-  //     'error',
-  //     (event?: service.ICustomEvent<any>) => {
-  //       if (event) {
-  //         console.error(event.detail);
-  //       }
-  //     },
-  //   ],
-  //   ['visualClicked', () => console.log('visual clicked')],
-  //   ['pageChanged', (event) => ''],
-  // ]) as Map<
-  //   string,
-  //   (event?: service.ICustomEvent<any>, embeddedEntity?: Embed) => void | null
-  // >;
-  // ngOnInit() {
-  //   this.embedReport();
-  // }
+  toggleFullScreen() {
+    this.isFullScreen = !this.isFullScreen;
+  }
 
-  // embedReport(){
-  //    this.reportConfig = {
-  //       ...this.reportConfig,
-  //        accessToken: 'cncx3tBlG/88Vb1wPSygimCcMhf9zhK2VR2kESZYc+Q=',
-  //        id: '7d82e18a-6f89-483a-8044-da01ff866bc2',
-  //        embedUrl: 'https://localhost:44300',
-  //     };
-  // }
+    // Function to exit full-screen mode
+    exitFullScreen() {
+      this.isFullScreen = false;
+    }
 
   constructor(private router: Router ) {}
 
@@ -79,5 +35,8 @@ export class DashboardDetailComponent {
   }
   plasma(){
     this.router.navigate(['/plasma-view']);
+  }
+  edit(){
+    this.router.navigate(['/edit'])
   }
 }

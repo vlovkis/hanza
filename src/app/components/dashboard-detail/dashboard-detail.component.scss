@@ -9,6 +9,7 @@
     background-color: #fff;
     color: #000000;
     text-align: center;
+    display: block;
   }
   
   .logo {
@@ -59,6 +60,28 @@
     flex: 1; /* Takes the remaining width */
     background-color: #f0f0f0; /* Background for the PowerBI area */
     padding: 20px;
+  }
+
+  .full-screen-mode .side-menu {
+    /* Hide the menu when in full-screen mode */
+    display: none;
+  }
+
+  .full-screen-mode .powerbi-embed {
+    /* Expand iframe to cover the whole screen in full-screen mode */
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .exit-full-screen-button{
+    position: relative;
+    top: 95%;
+    height: 30px;
+    border: none;
+    color: #382051;
+    font-weight: 700;
+    background-color: #ffffff;
+    width: 105px;
   }
 
   .report{
